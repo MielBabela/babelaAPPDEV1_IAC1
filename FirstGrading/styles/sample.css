@@ -1,0 +1,120 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+    margin: 10px auto;
+}
+body
+{
+    background-color: antiquewhite;     
+    display:block;
+    position: relative;
+    text-align:center;
+}
+#mainContent{
+    background-color: lightblue;
+    width: 1700px;
+    height: auto;
+    border: 4pt black solid;
+}
+article{
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1pt #2E4053 solid;
+}
+footer{
+    width: auto;
+    height: 60px;
+    border: 1pt solid black;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: lightcyan;
+}
+header{
+    margin: 15px;
+    width: auto;
+    height: 120px;
+    border: 1pt #2E4053 solid;
+    text-align: center;
+    background-color: lightsteelblue;
+}
+#navborder{
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+    height: 50px; 
+    border: 1pt #2E4053 solid;
+    background-color: lightcyan;
+}
+#navborderA{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+    height: 1005px; 
+    border: 1pt #2E4053 solid;
+    background-color: lightcyan;
+}
+nav{
+    text-align: center;
+}
+section{
+    border: 1pt black solid;
+    margin: 15px;
+}
+.column {
+    float: left;
+    padding: 10px;
+    
+    height: auto; 
+  }
+  
+.left {
+    width: 30%;
+    margin-right: 5pt;
+    background-color: lightsteelblue;
+}
+.right {
+    width: 66%;
+    float: right;
+    background-color: lightsteelblue;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.littlehead{
+    height: 60px;
+    background-color: lightcyan;
+}
+p, .arthead, .artfoot{
+    width: auto;
+    height: 60px;
+    border: 1pt solid black;
+    margin: 20pt;
+    background-color: lightcyan;
+}
+.ab{
+    width: 60%;
+    height: 300px;
+    background-color: lightcyan;
+}
+.cd{
+    width: 30%;
+    border: 1pt black solid;
+    height: 300px;
+    background-color: lightcyan;
+}
+aside{
+    
+    margin-left: 10pt;
+    margin-right: 20pt;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+}
