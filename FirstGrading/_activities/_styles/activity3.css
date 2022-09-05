@@ -1,0 +1,51 @@
+
+.row{
+    width: auto;
+    min-height: auto;
+    border: 1pt #000000 solid;
+    margin: 1pt;
+}
+.caro{
+    margin: 10px;
+}
+ .outer{
+    width: auto;
+    border: 1pt #da5f5f solid;
+
+    height: auto;
+ }
+ .butt{
+    border: 1pt #000000 solid;
+
+ }
+ .pogi{
+    min-height: 400pt;
+    background-color: rgb(231, 230, 230);
+ }
+ .bod{
+    width: auto;
+    padding: 3pt;
+    padding-left:6pt;
+    text-align: center;
+ }
+.logo{
+    background-color: aliceblue;
+    padding: 5pt;
+
+}
+footer{
+    width: auto;
+    align-content: center;
+}
+@media only screen and (max-width: 768px) {
+    .logo, .c{
+        align-items: center;
+        text-align: center;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .logo,.a, .b, .c{
+        align-items: center;
+        text-align: center;
+    }
+  }
