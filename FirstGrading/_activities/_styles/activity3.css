@@ -26,6 +26,8 @@
     width: auto;
     padding: 3pt;
     padding-left:6pt;
+    border: 1pt #000000 solid;
+
     text-align: center;
  }
 .logo{
@@ -36,6 +38,7 @@
 footer{
     width: auto;
     align-content: center;
+    
 }
 @media only screen and (max-width: 768px) {
     .logo, .c{
