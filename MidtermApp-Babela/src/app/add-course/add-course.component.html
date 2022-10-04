@@ -1,0 +1,38 @@
+<h1>Add Course</h1>
+<br>
+<form>
+    <div class="mb-3">
+      <label for="code" class="form-label">Course Code</label>
+      <input class="form-control" id="code">
+    </div>
+    <div class="mb-3">
+        <label for="desc" class="form-label">Course Description</label>
+        <input class="form-control" id="desc">
+      </div>
+      <!--Program Radio-->
+      <label  class="form-label">Course Type</label><br>
+      <div class="mb-3 btn-group" role="group" aria-label="Basic radio toggle button group">
+        
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="">
+        <label class="btn btn-outline-primary" for="btnradio1">Lecture</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked="">
+        <label class="btn btn-outline-primary" for="btnradio2">Laboratory</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked="">
+        <label class="btn btn-outline-primary" for="btnradio3">Lecture and Laboratory</label>
+      </div><br>
+      <div class="mb-3">
+        <label for="units" class="form-label">Number of Units</label>
+        <input class="form-control" id="units">
+      </div>
+      <div class="mb-3">
+        <label for="pre" class="form-label">Pre-Requisite</label>
+        <input class="form-control" id="pre">
+      </div>
+      <div class="mb-3">
+        <label for="co" class="form-label">Co-Requisite</label>
+        <input class="form-control" id="co">
+      </div>
+    
+        
+    <button type="submit" class="btn btn-primary">Add</button>
+  </form>
