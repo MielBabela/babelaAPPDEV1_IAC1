@@ -2,5 +2,16 @@
 <br>
 <div class="container">
     <router-outlet></router-outlet>
+    <h4> {{title}}</h4>
+    <h4>Name: {{fname}} {{lname}}</h4>
+    <img alt="userimg" src="{{userIMG}}">
+
+    <form>
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" aria-describedby="naam" placeholder="User's Complete Name"value="{{fname}} {{lname}}">
+        <label for="type" class="form-label">Account Type</label>
+        <input type="text" class="form-control" id="type" aria-describedby="tayp" placeholder="Account Type" value="{{type}}"><br>
+        <button type="reset" class="btn btn-success">Clear</button>
+    </form>
 </div>
 

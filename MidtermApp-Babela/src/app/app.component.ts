@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MidtermApp-Babela';
+  fname = "Ivan Miel"
+  lname = "Babela"
+  userIMG = "/assets/images/noot-noot-apocalypse.gif"
+  type ="Student"
+  constructor() {}
 }
