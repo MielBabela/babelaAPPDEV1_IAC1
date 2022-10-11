@@ -9,6 +9,8 @@ import { CourseInfoComponent } from './course-info/course-info.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { ContactsInfoComponent } from './contacts-info/contacts-info.component';
+import { HomeComponent } from './home/home.component';
+import { CourseComponent } from './course/course.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { ContactsInfoComponent } from './contacts-info/contacts-info.component';
     ArticlesComponent,
     AddCourseComponent,
     ContactsInfoComponent,
+    HomeComponent,
+    CourseComponent,
   ],
   imports: [
     BrowserModule,

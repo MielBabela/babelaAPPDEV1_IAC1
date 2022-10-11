@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Input,  OnInit } from '@angular/core';
+
+import {Course} from '../courses'
+import {COURSES} from '../samp.courses'
 
 @Component({
   selector: 'app-course-list',
@@ -6,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course-list.component.css']
 })
 export class CourseListComponent implements OnInit {
+  listcourses=COURSES;
+  @Input() courses: Course[] = []; //pass input to other compnents
 
   constructor() { }
 

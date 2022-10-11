@@ -13,5 +13,12 @@
         <input type="text" class="form-control" id="type" aria-describedby="tayp" placeholder="Account Type" value="{{type}}"><br>
         <button type="reset" class="btn btn-success">Clear</button>
     </form>
+    <h2>Binding to the colspan property</h2>
+<div class="container">
+    <table border =1 [ngClass]="classes">
+        <tr><td>Column1</td><td>Column2</td></tr>
+        <tr><td [colSpan]="2">Span 2 Columns</td></tr>
+    </table>
+</div>
 </div>
 

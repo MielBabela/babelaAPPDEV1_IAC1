@@ -4,16 +4,16 @@
     <thead>
       <tr>
         <th scope="col">Course Code</th>
-        <th scope="col">Type</th>
-        <th scope="col">Credit Unit</th>
+        <th scope="col">Course Title</th>
+        <th scope="col">Program</th>
         <th scope="col">Actions</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
+      <tr *ngFor="let course of listcourses">
+        <th scope="row"><a [title]="course.cCode">{{course.cCode}}</a></th>
+        <td>{{course.cDesc}}</td>
+        <td>{{course.program}}</td>
         <td><button type="button" class="btn btn-info">Edit</button><button type="button" class="btn btn-danger">Delete</button>
         </td>
       </tr>
