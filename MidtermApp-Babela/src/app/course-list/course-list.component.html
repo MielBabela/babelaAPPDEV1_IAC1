@@ -1,4 +1,4 @@
-<h1>Course Info Page</h1><br>
+<h1>Course List Page</h1><br>
 <a class="btn btn-primary" routerLink="add-course">Add Course</a><br><br>
 <table class="table">
     <thead>
@@ -10,13 +10,92 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let course of listcourses">
+      <tr *ngFor="let course of courses">
         <th scope="row"><a [title]="course.cCode">{{course.cCode}}</a></th>
         <td>{{course.cDesc}}</td>
         <td>{{course.program}}</td>
-        <td><button type="button" class="btn btn-info">Edit</button><button type="button" class="btn btn-danger">Delete</button>
+        <td><button type="button" class="btn btn-info"  [class.selected] ="course === selectedCourse" (click)="onSelect(course)">Info</button>
+          
+            <button type="button" class="btn btn-danger">Delete</button> 
         </td>
       </tr>
 
     </tbody>
   </table>
+  <app-course-info [course]="selectedCourse"></app-course-info>
+<!-- Modal -->
+<!-- 
+  data-bs-toggle="modal" data-bs-target="#formModal"
+  <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Course Info</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" *ngIf="course">
+<form>
+  <div class="mb-3">
+    <p>Course ID: </p>
+  </div>
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <label for="code" class="form-label">Course Code</label>
+      <input class="form-control" id="code">
+    </div>
+    <div class="col-md-8 mb-3">
+        <label for="desc" class="form-label">Course Description</label>
+        <input class="form-control" id="desc">
+      </div>
+    </div>
+    <div class="row">
+
+   
+      <label  class="form-label">Program</label>
+      <div class="col-md-6 mb-3 btn-group" role="group" aria-label="Basic radio toggle button group">
+        
+        <input type="radio" class="btn-check" name="prog" id="prog1" autocomplete="off" checked="">
+        <label class="btn btn-outline-primary" for="prog1">BSCS</label>
+        <input type="radio" class="btn-check" name="prog" id="prog2" autocomplete="off" checked="">
+        <label class="btn btn-outline-primary" for="prog2">BSCpE</label>
+        <input type="radio" class="btn-check" name="prog" id="prog3" autocomplete="off" checked="">
+        <label class="btn btn-outline-primary" for="prog3">BSIT</label>
+      </div>
+ 
+      <label  class="form-label">Course Type</label>
+      <div class=" col-md-6 mb-3 btn-group" role="group" aria-label="Basic radio toggle button group">
+        
+        <input type="radio" class="btn-check" name="type" id="type1" autocomplete="off" checked="">
+        <label class="btn btn-outline-primary" for="type1">Lecture</label>
+        <input type="radio" class="btn-check" name="type" id="type2" autocomplete="off" checked="">
+        <label class="btn btn-outline-primary" for="type2">Laboratory</label>
+        <input type="radio" class="btn-check" name="type" id="type3" autocomplete="off" checked="">
+        <label class="btn btn-outline-primary" for="type3">Lecture and Laboratory</label>
+      </div><br>
+    </div>
+      <div class="row">
+      <div class="col-md-3 mb-3">
+        <label for="units" class="form-label">Credit Units</label>
+        <input class="form-control" id="units">
+      </div>
+      <div class="col mb-3">
+        <label for="pre" class="form-label">Pre-Requisite</label>
+        <input class="form-control" id="pre">
+      </div>
+      <div class="mb-3">
+        <label for="co" class="form-label">Co-Requisite</label>
+        <input class="form-control" id="co">
+      </div>
+    
+    </div>
+  </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->

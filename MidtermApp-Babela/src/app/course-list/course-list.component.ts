@@ -9,8 +9,13 @@ import {COURSES} from '../samp.courses'
   styleUrls: ['./course-list.component.css']
 })
 export class CourseListComponent implements OnInit {
-  listcourses=COURSES;
-  @Input() courses: Course[] = []; //pass input to other compnents
+  courses=COURSES;
+  title="course info";
+  @Input() course?: Course[] = []; //pass input to other compnents
+  selectedCourse?: Course;
+  onSelect(course: Course): void{
+    this.selectedCourse = course;
+  }
 
   constructor() { }
 

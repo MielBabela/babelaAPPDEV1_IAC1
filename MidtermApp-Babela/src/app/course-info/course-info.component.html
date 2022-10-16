@@ -1,20 +1,64 @@
+<h1>Course Info</h1>
+<br>
+<div *ngIf="course">
 
-<h1>Course Info Page</h1><br>
-<div class="row">
-    
-    <div class="col"> row1 col1 </div>
-    <div class="col"> row1 col2 </div>
+    <form>
+        <div class="mb-3">
+          <p>Course ID: {{course.id}}</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="code" class="form-label">Course Code</label>
+            <input class="form-control" id="code" [value] ="course.cCode">
+          </div>
+          <div class="col-md-8 mb-3">
+              <label for="desc" class="form-label">Course Description</label>
+              <input class="form-control" id="desc" [value] ="course.cDesc">
+            </div>
+          </div>
+          <div class="row">
+      
+         
+            <label  class="form-label">Program</label>
 
-</div>
-<div class="row">
-    
-    <div class="col"> row2 col1 </div>
-    <div class="col"> row2 col2 </div>
 
-</div>
-<div class="row">
-    
-    <div class="col"> row3 col1 </div>
-    <div class="col"> row3 col2 </div>
+           <div class="col-md-6 mb-3 btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input class="form-control" id="desc" [value] ="course.program">
+               <!-- 
+              <input type="radio" class="btn-check" name="prog" id="prog1" autocomplete="off" checked="">
+              <label class="btn btn-outline-primary" for="prog1">BSCS</label>
+              <input type="radio" class="btn-check" name="prog" id="prog2" autocomplete="off" checked="">
+              <label class="btn btn-outline-primary" for="prog2">BSCpE</label>
+              <input type="radio" class="btn-check" name="prog" id="prog3" autocomplete="off" checked="">
+              <label class="btn btn-outline-primary" for="prog3">BSIT</label>-->
+            </div> 
+       
+            <label  class="form-label">Course Type</label>
+            <div class=" col-md-6 mb-3 btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input class="form-control" id="desc" [value] ="course.cType">
 
+              <!-- <input type="radio" class="btn-check" name="type" id="type1" autocomplete="off" checked="">
+              <label class="btn btn-outline-primary" for="type1">Lecture</label>
+              <input type="radio" class="btn-check" name="type" id="type2" autocomplete="off" checked="">
+              <label class="btn btn-outline-primary" for="type2">Laboratory</label>
+              <input type="radio" class="btn-check" name="type" id="type3" autocomplete="off" checked="">
+              <label class="btn btn-outline-primary" for="type3">Lecture and Laboratory</label> -->
+            </div><br>
+          </div>
+            <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="units" class="form-label">Credit Units</label>
+              <input class="form-control" id="units" [value] ="course.credit_units">
+            </div>
+            <div class="col mb-3">
+              <label for="pre" class="form-label">Pre-Requisite</label>
+              <input class="form-control" id="pre" [value] ="course.preReq">
+            </div>
+            <div class="mb-3">
+              <label for="co" class="form-label">Co-Requisite</label>
+              <input class="form-control" id="co" [value] ="course.coRec">
+            </div>
+          
+          </div>
+        </form>
 </div>
